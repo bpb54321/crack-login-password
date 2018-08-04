@@ -1,0 +1,18 @@
+{
+  "name": "crack-login-password",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "wdio-selenium-standalone-service": "0.0.10",
+    "webdriverio": "^4.13.1"
+  },
+  "devDependencies": {
+    "wdio-mocha-framework": "^0.6.2"
+  }
+}

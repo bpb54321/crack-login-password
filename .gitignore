@@ -1,0 +1,5 @@
+node_modules
+.vscode
+errorShots
+possible-passwords.csv
+login-config.js
