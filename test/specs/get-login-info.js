@@ -1,7 +1,8 @@
-const urls = require('./../../login-config').urls;
-const username_options = require('./../../login-config').username_options;
-const password_options = require('./../../login-config').password_options;
-
+const {
+  urls,
+  username_options,
+  password_options
+ } = require('./../../login-config');
 
 // The login info combintations that this script will figure out for each site
 // In CSV format, with column 0: url, column 1: username, column 2: password
@@ -41,12 +42,14 @@ describe('Login info getter', function() {
             break;
           }
         }
+        // Will need to also break out of the username loop
         if (successfully_logged_in) {
           break;
         }
       }
 
       if (successfully_logged_in) {
+        console.log(`${site_url}, ${username}, ${password}\n`);
         login_info.push(`${site_url}, ${username}, ${password}\n`);
       }
     }
